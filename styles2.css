@@ -1,0 +1,21 @@
+h3 {
+  margin: 2rem auto;
+  text-align: center;
+}
+body {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+h3 {
+  font-style: 600;
+  color: green;
+  text-decoration: underline;
+}
+p {
+  text-align: center;
+  font-weight: 600;
+}
+li {
+  font-weight: 500;
+  margin: 2rem;
+}

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 2rem;
+  color: green;
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 175, 100);
+  width: 70%;
+  justify-self: center;
+  align-self: center;
+  height: 60vh;
+  margin: 3rem auto;
+  gap: 1.2rem;
+  padding: 30px 10px;
+}
+
+label {
+  font-weight: 500;
+}
+
+input {
+  width: 50%;
+  height: 6rem;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+#exp-delivery {
+  width: 2rem;
+  height: 4rem;
+}
+
+button {
+  height: 3rem;
+  width: 25%;
+  background-color: rgb(2, 59, 2);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: 1px solid white;
+  font-weight: 560;
+}
+
+select {
+  width: 50%;
+  height: 6rem;
+  text-align: center;
+}
+
+option {
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.help {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.extra-info {
+  justify-self: center;
+}

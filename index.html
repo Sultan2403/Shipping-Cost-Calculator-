@@ -6,14 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h2>Shipping Cost Calculator</h2>
+    <h2>$ Shipping Cost Calculator</h2>
     <form>
-        <label for="">Enter Package Weight Here</label>
+        <label for="Weight">Package Weight </label>
+        <input type="number" id="Weight" min="0" max="50" placeholder="Enter Package Weight" step="1" required />
+        <label for="destination-zone">Select Destination Zone</label>
+        <select id="destination-zone" required>
+            <option value="" disabled>Select A Destination Zone</option>
+            <option id="Lagos" value="Lagos" selected>Lagos</option>
+            <option id="Ibadan" value="Ibadan">Ibadan</option>
+            <option id="Anambra" value="Anambra">Anambra</option>
+            <option id="Kwara" value="Kwara">Kwara</option>
+            <option id="Sokoto" value="Sokoto">Sokoto</option>
 
+        </select>
+        <p>More options coming soon!</p>
+        <label for="exp-delivery">Express Delivery?</label>
+        <input type="checkbox" id="exp-delivery" />
+        <p class="help">Help: Select the option above for a guaranteed faster delivery but at a bigger cost 😉</p>
+
+
+        <button id="Calc-btn" type="button">Calculate Shipping Cost!</button>
+        <p id="result"></p>
     </form>
+    <p class="extra-info">To find out more about how we charge you and make our calculations <a href="./help.html">click
+            this
+            link!</a> </p>
+    <p>Contact Us on <a href="https://www.facebook.com/" target="_blank">Facebook</a>, <a href="https://x.com/"
+            target="_blank">Twitter</a> and <a href="https://www.instagram.com/" target="_blank">Instagram</a> </p>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
